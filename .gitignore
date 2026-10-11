@@ -1,0 +1,6 @@
+data/*
+!data/.htaccess
+!data.template/
+*.log
+.playwright-cli/
+node_modules/

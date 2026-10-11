@@ -1,0 +1,19 @@
+# WorkBuddy2API Panel (PHP) - Apache rules
+Options -Indexes
+
+# Block sensitive directories outright.
+RedirectMatch 404 ^/(data|app|tests|docs)/
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# Do not rewrite real files (panel assets) that are directly accessible.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^panel/(index\.html|app\.js)$ - [L]
+RewriteRule ^ - [E=WB2AURI:%{REQUEST_URI}]
+RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+<FilesMatch "\.(json|jsonl|key|md|lock|sql)$">
+Require all denied
+</FilesMatch>

@@ -1,0 +1,25 @@
+WorkBuddy2API Panel (PHP Edition)
+Copyright (c) 2026 contributors of the PHP edition
+
+This PHP edition is a rewrite for shared PHP hosting of:
+
+  WorkBuddy2API Panel (Go)
+  https://github.com/linguo2625469/workbuddy2api-panel
+  Copyright (c) linguo2625469
+
+  which is an enhanced fork of:
+  WorkBuddy2API
+  https://github.com/Sliverkiss/workbuddy2api
+  Copyright (c) Sliverkiss
+
+Both upstream projects are licensed under the MIT License (see LICENSE file
+in this distribution, inherited verbatim from the Go upstream). The panel
+frontend assets (panel/index.html, panel/app.js) are reused from the Go
+upstream under the same MIT license.
+
+Per MIT license requirements, the original copyright notice and permission
+notice are included (LICENSE) and the upstream origins are attributed here.
+
+Use of CodeBuddy account credentials through this software is subject to the
+terms of service of the upstream platform. For personal use of your own
+accounts only. No commercial redistribution.
